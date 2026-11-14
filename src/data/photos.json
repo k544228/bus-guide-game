@@ -1,0 +1,203 @@
+{
+  "cities": [
+    {
+      "id": "changhua",
+      "label": "彰化縣"
+    },
+    {
+      "id": "taipei",
+      "label": "台北市"
+    }
+  ],
+  "photos": [
+    {
+      "id": "changhua-25455e20",
+      "city": "changhua",
+      "type": "spot",
+      "name": "鹿港天后宮",
+      "src": "/images/changhua/attractions/changhua-25455e20.jpg"
+    },
+    {
+      "id": "changhua-3164e0a1",
+      "city": "changhua",
+      "type": "spot",
+      "name": "鹿港龍山寺",
+      "src": "/images/changhua/attractions/changhua-3164e0a1.jpg"
+    },
+    {
+      "id": "changhua-47dde27a",
+      "city": "changhua",
+      "type": "spot",
+      "name": "彰化扇形車庫",
+      "src": "/images/changhua/attractions/changhua-47dde27a.jpg"
+    },
+    {
+      "id": "changhua-5be974c4",
+      "city": "changhua",
+      "type": "spot",
+      "name": "八卦山大佛",
+      "src": "/images/changhua/attractions/changhua-5be974c4.jpg"
+    },
+    {
+      "id": "changhua-5febf89e",
+      "city": "changhua",
+      "type": "spot",
+      "name": "鹿港老街與九曲巷",
+      "src": "/images/changhua/attractions/changhua-5febf89e.jpg"
+    },
+    {
+      "id": "changhua-646f1c02",
+      "city": "changhua",
+      "type": "spot",
+      "name": "半邊井",
+      "src": "/images/changhua/attractions/changhua-646f1c02.jpg"
+    },
+    {
+      "id": "changhua-e4796579",
+      "city": "changhua",
+      "type": "spot",
+      "name": "鹿港文武廟",
+      "src": "/images/changhua/attractions/changhua-e4796579.jpg"
+    },
+    {
+      "id": "changhua-6b6d51e5",
+      "city": "changhua",
+      "type": "food",
+      "name": "鹿港牛舌餅",
+      "src": "/images/changhua/food/changhua-6b6d51e5.jpg"
+    },
+    {
+      "id": "changhua-768af91e",
+      "city": "changhua",
+      "type": "food",
+      "name": "麵線糊",
+      "src": "/images/changhua/food/changhua-768af91e.jpg"
+    },
+    {
+      "id": "changhua-81909ded",
+      "city": "changhua",
+      "type": "food",
+      "name": "彰化肉圓",
+      "src": "/images/changhua/food/changhua-81909ded.jpg"
+    },
+    {
+      "id": "changhua-c8edf9b0",
+      "city": "changhua",
+      "type": "food",
+      "name": "鳳眼糕",
+      "src": "/images/changhua/food/changhua-c8edf9b0.jpg"
+    },
+    {
+      "id": "changhua-fd30d0a3",
+      "city": "changhua",
+      "type": "food",
+      "name": "蝦猴",
+      "src": "/images/changhua/food/changhua-fd30d0a3.jpg"
+    },
+    {
+      "id": "taipei-00c93e63",
+      "city": "taipei",
+      "type": "spot",
+      "name": "台北101",
+      "src": "/images/taipei/attractions/taipei-00c93e63.jpg"
+    },
+    {
+      "id": "taipei-5f126d87",
+      "city": "taipei",
+      "type": "spot",
+      "name": "龍山寺",
+      "src": "/images/taipei/attractions/taipei-5f126d87.jpg"
+    },
+    {
+      "id": "taipei-7fd25ee7",
+      "city": "taipei",
+      "type": "spot",
+      "name": "大稻埕（迪化街）",
+      "src": "/images/taipei/attractions/taipei-7fd25ee7.jpg"
+    },
+    {
+      "id": "taipei-d98200ba",
+      "city": "taipei",
+      "type": "spot",
+      "name": "中正紀念堂",
+      "src": "/images/taipei/attractions/taipei-d98200ba.jpg"
+    },
+    {
+      "id": "taipei-e5f4e76e",
+      "city": "taipei",
+      "type": "spot",
+      "name": "霞海城隍廟（月老）",
+      "src": "/images/taipei/attractions/taipei-e5f4e76e.jpg"
+    },
+    {
+      "id": "taipei-f269a7da",
+      "city": "taipei",
+      "type": "spot",
+      "name": "國立故宮博物院",
+      "src": "/images/taipei/attractions/taipei-f269a7da.jpg"
+    },
+    {
+      "id": "taipei-7426d909",
+      "city": "taipei",
+      "type": "spot",
+      "name": "陽明山",
+      "src": "/images/taipei/attractions/%E9%99%BD%E6%98%8E%E5%B1%B1_1.jpg"
+    },
+    {
+      "id": "taipei-b47e945e",
+      "city": "taipei",
+      "type": "spot",
+      "name": "陽明山",
+      "src": "/images/taipei/attractions/%E9%99%BD%E6%98%8E%E5%B1%B1_2.jpg"
+    },
+    {
+      "id": "taipei-0ebf7213",
+      "city": "taipei",
+      "type": "food",
+      "name": "豆漿燒餅油條",
+      "src": "/images/taipei/food/taipei-0ebf7213.jpg"
+    },
+    {
+      "id": "taipei-8b094f32",
+      "city": "taipei",
+      "type": "food",
+      "name": "小籠包",
+      "src": "/images/taipei/food/taipei-8b094f32.jpg"
+    },
+    {
+      "id": "taipei-ae590950",
+      "city": "taipei",
+      "type": "food",
+      "name": "滷肉飯",
+      "src": "/images/taipei/food/taipei-ae590950.jpg"
+    },
+    {
+      "id": "taipei-b50846cb",
+      "city": "taipei",
+      "type": "food",
+      "name": "鳳梨酥",
+      "src": "/images/taipei/food/taipei-b50846cb.jpg"
+    },
+    {
+      "id": "taipei-da7296ec",
+      "city": "taipei",
+      "type": "food",
+      "name": "牛肉麵",
+      "src": "/images/taipei/food/taipei-da7296ec.jpg"
+    },
+    {
+      "id": "taipei-8775bcf0",
+      "city": "taipei",
+      "type": "other",
+      "name": "捷運與悠遊卡",
+      "src": "/images/taipei/other/taipei-8775bcf0.jpg"
+    },
+    {
+      "id": "taipei-e500399c",
+      "city": "taipei",
+      "type": "other",
+      "name": "迪化街南北貨",
+      "src": "/images/taipei/other/taipei-e500399c.jpg"
+    }
+  ]
+}
