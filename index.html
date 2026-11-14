@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>大巴導遊之旅</title>
+  </head>
+  <body>
+    <div id="app">載入中…</div>
+    <script>
+      // 診斷用：載入失敗或發生錯誤時，直接顯示原因，不再是空白頁
+      addEventListener("error", function (e) {
+        var el = e.target, app = document.getElementById("app");
+        if (el && (el.tagName === "SCRIPT" || el.tagName === "LINK")) {
+          app.textContent = "載入失敗，找不到：" + (el.src || el.href);
+        } else if (e.message) {
+          var d = document.createElement("div");
+          d.style.cssText = "position:fixed;top:0;left:0;right:0;padding:8px;background:#900;color:#fff;z-index:9;font-size:14px";
+          d.textContent = "程式錯誤：" + e.message;
+          document.body.appendChild(d);
+        }
+      }, true);
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
