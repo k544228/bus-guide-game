@@ -1,0 +1,8 @@
+{
+  "main": "/music/stage.mp3",
+  "start": "/music/start.mp3",
+  "story": "/music/story.mp3",
+  "play": "/music/stage.mp3",
+  "bus": "/music/bus.mp3",
+  "fail": ""
+}

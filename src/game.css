@@ -1,0 +1,47 @@
+.hud { position: absolute; top: 0; left: 0; right: 0; z-index: 2; display: flex; gap: 10px; align-items: center;
+  padding: calc(8px + env(safe-area-inset-top)) 12px 8px; background: rgba(10, 24, 30, 0.88); font-size: 14px; }
+.bar { flex: 1; height: 10px; border-radius: 5px; background: rgba(255, 255, 255, 0.2); overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--stripe); transition: width 0.4s; }
+.bar i.low { background: #e4572e; }
+.photo { position: absolute; left: 0; right: 0; top: 48px; height: 38%; overflow: hidden; background: #000; }
+.pbg { position: absolute; inset: -20px; background-size: cover; background-position: center; filter: blur(18px) brightness(0.6); }
+.photo img { position: relative; display: block; margin: 0 auto; height: 100%; max-width: 100%; object-fit: contain; }
+.qbox { position: absolute; left: 12px; right: 12px; top: calc(38% + 60px); bottom: calc(12px + env(safe-area-inset-bottom));
+  overflow: auto; padding: 14px 16px; border-radius: 12px; background: rgba(10, 24, 30, 0.92); border: 1px solid rgba(242, 177, 52, 0.6); }
+.qbox .big { margin: 12px auto 0; }
+.qn { color: var(--stripe); font-size: 14px; }
+.qbox h3 { font-size: clamp(18px, 3vw, 24px); line-height: 1.5; margin: 6px 0 12px; }
+.opts { display: grid; gap: 8px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.opt { padding: 12px 14px; text-align: left; font-size: 17px; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 10px; background: rgba(255, 255, 255, 0.08); }
+.opt:hover:not(:disabled) { background: rgba(242, 177, 52, 0.25); }
+.opt.ok { background: #2a9d5c; border-color: #2a9d5c; }
+.opt.no { background: #b3392a; border-color: #b3392a; }
+.opt:disabled { cursor: default; }
+.opt2 { min-width: min(340px, 86vw); }
+.grid5 { position: absolute; inset: 16px 12px 130px; display: grid; gap: 8px; grid-template-columns: repeat(6, 1fr); grid-template-rows: 1fr 1fr; }
+.grid5 .photo { position: relative; top: 0; height: auto; border-radius: 10px; grid-column: span 2; }
+.grid5 .photo:nth-child(4) { grid-column: 2 / span 2; }
+.grid5 .photo:nth-child(5) { grid-column: 4 / span 2; }
+.count { position: absolute; left: 0; right: 0; bottom: calc(12px + env(safe-area-inset-bottom)); display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
+.count .big { padding: 10px 24px; }
+.map { position: absolute; inset: 48px 0 40px; display: flex; align-items: center; justify-content: center; }
+.stage { position: relative; width: min(100%, calc((100dvh - 88px) * 16 / 9)); aspect-ratio: 16 / 9; background: #000; }
+.stage img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.mk { position: absolute; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 0; border: 0; background: none; color: #fff; }
+.mk b { width: clamp(38px, 7vw, 60px); height: clamp(38px, 7vw, 60px); display: grid; place-items: center; border-radius: 50%;
+  background: var(--stripe); color: var(--ink); font-size: clamp(20px, 3.6vw, 32px); box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6); animation: pulse 1.4s infinite; }
+.mk span { font-weight: 700; background: rgba(10, 24, 30, 0.8); padding: 2px 8px; border-radius: 8px; }
+.mk.done b { background: #2a9d5c; color: #fff; animation: none; }
+@keyframes pulse { 50% { transform: scale(1.1); } }
+.hint { position: absolute; left: 0; right: 0; bottom: calc(8px + env(safe-area-inset-bottom)); text-align: center; text-shadow: 0 2px 6px #000; }
+.vid { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #000; }
+.dbg { position: absolute; transform: translate(-50%, -120%); background: rgba(0, 0, 0, 0.8); padding: 2px 6px; border-radius: 6px; font-size: 13px; pointer-events: none; }
+.photo.multi { display: flex; justify-content: center; gap: 4px; }
+.photo.multi img { flex: 1; min-width: 0; width: 50%; margin: 0; }
+#mute { position: fixed; top: calc(8px + env(safe-area-inset-top)); right: 8px; z-index: 20; width: 40px; height: 40px; border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5); background: rgba(0, 0, 0, 0.55); color: #fff; font-size: 18px; cursor: pointer; }
+#app .tools { right: 56px; }
+.hud { padding-right: 56px; }
+.qbox .txt { white-space: pre-line; line-height: 1.8; margin-bottom: 8px; }
+.tap { position: absolute; inset: 0; z-index: 30; display: flex; align-items: center; justify-content: center; padding: 24px; text-align: center;
+  background: rgba(0, 0, 0, 0.6); font-size: clamp(18px, 3.5vw, 28px); cursor: pointer; }
