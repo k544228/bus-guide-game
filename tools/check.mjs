@@ -74,7 +74,7 @@ if (has("tools/build-photo-data.mjs")) {
   console.log((r.stdout || "") + (r.stderr || ""));
   if (r.status !== 0) bad("照片資料產生失敗");
 } else console.log("  （略過，缺少 tools\\build-photo-data.mjs）");
-has("public/images/bg/start.jpg") ? ok("首頁背景 public\\images\\bg\\start.jpg 存在") : bad("找不到首頁背景 public\\images\\bg\\start.jpg（首頁會顯示假圖）");
+has("public/images/bg/start.webp") ? ok("首頁背景 public\\images\\bg\\start.webp 存在") : bad("找不到首頁背景 public\\images\\bg\\start.webp（首頁會顯示假圖）");
 
 head("7. 程式版本與題庫邏輯");
 const read = (p) => (has(p) ? fs.readFileSync(path.join(root, p), "utf8") : "");
@@ -110,7 +110,7 @@ try {
 
 head("8. 圖片與影片檔案是否都在");
 {
-  const refs = new Set(["/images/bg/exit.mp4", "/images/bg/board.mp4", "/images/bg/bus-parked.jpg", "/images/bg/fail.jpg"]);
+  const refs = new Set(["/images/bg/exit.mp4", "/images/bg/board.mp4", "/images/bg/bus-parked.webp", "/images/bg/fail.webp"]);
   for (const x of read("src/story.ts").matchAll(/\/images\/bg\/[\w.-]+\.(?:jpe?g|png|webp|mp4)/g)) refs.add(x[0]);
   try {
     for (const c of Object.values(JSON.parse(read("src/data/scenes.json")))) {

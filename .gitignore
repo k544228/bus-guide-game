@@ -3,3 +3,8 @@ dist
 環台旅遊照片
 照片
 ffmpeg-9.0.2-essentials_build/
+upload-log.txt
+upload*.bat
+public/images_webp/
+*.zip
+public/music/*_small.mp3

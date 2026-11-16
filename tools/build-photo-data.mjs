@@ -19,15 +19,6 @@ if (!fs.existsSync(IMAGES)) {
   process.exit(1);
 }
 
-// 首頁背景（不覆蓋已存在的檔案）：照片\環台旅遊照片\首頁.jpg → public/images/bg/start.jpg
-const homeSrc = path.join(root, "照片", "環台旅遊照片", "首頁.jpg");
-const homeDst = path.join(IMAGES, "bg", "start.jpg");
-if (!fs.existsSync(homeDst) && fs.existsSync(homeSrc)) {
-  fs.mkdirSync(path.dirname(homeDst), { recursive: true });
-  fs.copyFileSync(homeSrc, homeDst);
-  console.log("已複製首頁背景：" + homeSrc);
-}
-
 // 還原中文名稱：public 裡若是英文代號檔名（例如 taipei-5f126d87.jpg），
 // 就用「環台旅遊照片」裡的原始中文檔名對照；對照不到就直接用檔名當名稱。
 const SRC = path.join(root, "環台旅遊照片");

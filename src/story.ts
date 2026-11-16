@@ -3,13 +3,13 @@
 export type Line = { who?: string; text: string; bg: string; voice?: string };
 
 export const bgs: Record<string, { label: string; from: string; to: string; src?: string }> = {
-  start: { label: "首頁", from: "#0f2a33", to: "#f2b134", src: "/images/bg/start.jpg" },
-  s1: { label: "便利商店", from: "#1b2a30", to: "#6b8e94", src: "/images/bg/1.jpg" },
-  s3: { label: "牆上的光", from: "#12062b", to: "#7b3fe4", src: "/images/bg/3.jpg" },
-  s4: { label: "大巴車內", from: "#0f2a33", to: "#c8892b", src: "/images/bg/4.jpg" },
-  s5: { label: "大巴車內（主角驚訝）", from: "#0f2a33", to: "#c8892b", src: "/images/bg/5.jpg" },
+  start: { label: "首頁", from: "#0f2a33", to: "#f2b134", src: "/images/bg/start.webp" },
+  s1: { label: "便利商店", from: "#1b2a30", to: "#6b8e94", src: "/images/bg/1.webp" },
+  s3: { label: "牆上的光", from: "#12062b", to: "#7b3fe4", src: "/images/bg/3.webp" },
+  s4: { label: "大巴車內", from: "#0f2a33", to: "#c8892b", src: "/images/bg/4.webp" },
+  s5: { label: "大巴車內（主角驚訝）", from: "#0f2a33", to: "#c8892b", src: "/images/bg/5.webp" },
   // 模式選擇、城市辨識、答題提示等所有「大巴」畫面共用這一張
-  bus: { label: "大巴車內", from: "#0f2a33", to: "#c8892b", src: "/images/bg/4.jpg" },
+  bus: { label: "大巴車內", from: "#0f2a33", to: "#c8892b", src: "/images/bg/4.webp" },
 };
 
 export const story: Line[] = [

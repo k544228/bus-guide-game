@@ -106,10 +106,10 @@ function identify(ctx: Ctx, route: string[], i: number): void {
         if (i > 0) {
           st.bonusTotal++;
           if (ok) st.bonus++;
-          return notice(ctx, ok ? "答對了！" : "答錯了", `這裡是${labels[city]}（加分題，不影響通關）。`, "帶大家逛逛", () => playVideo(ctx, "/images/bg/exit.mp4", () => runStops(ctx, route, i)), "/images/bg/bus-parked.jpg");
+          return notice(ctx, ok ? "答對了！" : "答錯了", `這裡是${labels[city]}（加分題，不影響通關）。`, "帶大家逛逛", () => playVideo(ctx, "/images/bg/exit.mp4", () => runStops(ctx, route, i)), "/images/bg/bus-parked.webp");
         }
         if (!ok) return ending(ctx, `你搞錯了地點，大巴在${labels[city]}迷了路……`, "遊戲失敗：城市名稱答錯。");
-        notice(ctx, "答對了！", `這裡是${labels[city]}。現在帶旅客去逛逛吧！`, "出發", () => playVideo(ctx, "/images/bg/exit.mp4", () => runStops(ctx, route, i)), "/images/bg/bus-parked.jpg");
+        notice(ctx, "答對了！", `這裡是${labels[city]}。現在帶旅客去逛逛吧！`, "出發", () => playVideo(ctx, "/images/bg/exit.mp4", () => runStops(ctx, route, i)), "/images/bg/bus-parked.webp");
       };
     });
   };
@@ -218,5 +218,5 @@ function endCity(ctx: Ctx, route: string[], i: number): void {
 
 function ending(ctx: Ctx, title: string, text: string): void {
   music("fail");
-  notice(ctx, title, text, "返回選擇", ctx.home, "/images/bg/fail.jpg");
+  notice(ctx, title, text, "返回選擇", ctx.home, "/images/bg/fail.webp");
 }

@@ -1,7 +1,7 @@
 {
   "taipei": {
-    "map": "/images/bg/map-taipei.jpg",
-    "street": "/images/bg/street-taipei.jpg",
+    "map": "/images/bg/map-taipei.webp",
+    "street": "/images/bg/street-taipei.webp",
     "spots": {
       "霞海城隍廟（月老）": [
         42,
@@ -34,8 +34,8 @@
     }
   },
   "changhua": {
-    "map": "/images/bg/map-changhua.jpg",
-    "street": "/images/bg/street-changhua.jpg",
+    "map": "/images/bg/map-changhua.webp",
+    "street": "/images/bg/street-changhua.webp",
     "spots": {
       "八卦山大佛": [
         78,
